@@ -127,7 +127,7 @@ namespace HotelListing.Controllers
 
             await _countriesRepository.DeleteAsync(id);
 
-            return NoContent();
+            return Ok(new {});
         }
 
         private async Task<bool> CountryExists(int id)
