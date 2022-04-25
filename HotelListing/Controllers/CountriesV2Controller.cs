@@ -45,7 +45,6 @@ namespace HotelListing.Controllers
 
             if (country == null)
             {
-                return NotFound();
                 throw new NotFoundException(nameof(GetCountry), id);
             }
 
